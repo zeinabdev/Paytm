@@ -42,3 +42,22 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
 }
+
+input,
+label {
+  margin: 0 0.5em 0 0.5em;
+}
+
+#card,
+h2 {
+  margin-bottom: 1em;
+}
+
+#submit {
+  display: block;
+  margin: 0 auto;
+}
+
+#add {
+  margin: 0 1em 0.5em 0em;
+}

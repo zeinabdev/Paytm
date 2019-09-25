@@ -1,55 +1,60 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
-class Form extends Component {
+class ExpenseForm extends Component {
   render() {
     return (
-      <div id="Form">
-        <h3>Add a new item to the table:</h3>
+      <Card id="card">
+        <h4 align="center">Add a new expense:</h4>
         <form onSubmit={this.props.handleFormSubmit}>
-          <label>
-            Description:
-            <input
-              type="text"
-              required
-              name="description"
-              value={this.props.description}
-              onChange={this.props.handleInputChange}
-            />
-          </label>
+          <label>Description: </label>
+          <input
+            type="text"
+            required
+            name="description"
+            value={this.props.description}
+            onChange={this.props.handleInputChange}
+          />
 
-          <label>
-            Amount:
-            <input
-              type="number"
-              required
-              min="0"
-              step="any"
-              name="amount"
-              value={this.props.amount}
-              onChange={this.props.handleInputChange}
-            />
-          </label>
+          <label>Amount: </label>
 
-          <label>
-            Currency:
-            <select
-              name="currency"
-              value={this.props.currency}
-              onChange={this.props.handleInputChange}
-            >
-              {this.props.currencies.map(currency => (
-                <option value={currency}>{currency}</option>
-              ))}
-            </select>
-          </label>
+          <input
+            type="number"
+            required
+            min="0"
+            step="any"
+            name="amount"
+            value={this.props.amount}
+            onChange={this.props.handleInputChange}
+          />
 
-          <button type="submit" value="Submit">
-            Add Item
-          </button>
+          <label>Currency: </label>
+
+          <select
+            name="currency"
+            value={this.props.currency}
+            onChange={this.props.handleInputChange}
+          >
+            {this.props.currencies.map(currency => (
+              <option key={currency} value={currency}>
+                {currency}
+              </option>
+            ))}
+          </select>
+
+          <Button
+            className="float-right"
+            id="add"
+            type="submit"
+            variant="outline-secondary"
+          >
+            Add Expense
+          </Button>
         </form>
-      </div>
+      </Card>
     );
   }
 }
 
-export default Form;
+export default ExpenseForm;

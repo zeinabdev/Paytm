@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import Table from "react-bootstrap/Table";
+import Button from "react-bootstrap/Button";
 
-class Table extends Component {
+class ExpenseTable extends Component {
   render() {
     const receipts = this.props.receipts;
     let sum = 0;
@@ -18,39 +20,46 @@ class Table extends Component {
     return (
       <div>
         {receipts.length > 5 && <p> You have a limit of 5 receipts!</p>}
-        <table>
-          <tbody>
+        <Table striped bordered hover>
+          <thead>
             <tr>
               <th>Description</th>
-              <th>Amount</th>
+              <th>Amount in CAD</th>
             </tr>
+          </thead>
 
-            {receipts.slice(0, 5).map(receipt => {
+          <tbody>
+            {receipts.slice(0, 5).map((receipt, i) => {
               return (
-                <div>
-                  <tr>
-                    <td>{receipt.description}</td>
-                    <td>{receipt.canadian}</td>
-                  </tr>
-                  <tr></tr>
-                </div>
+                <tr key={i}>
+                  <td>{receipt.description}</td>
+                  <td>${receipt.canadian}</td>
+                </tr>
               );
             })}
           </tbody>
-        </table>
-        {sum}
-
+        </Table>
+        <p>
+          <b>Total: </b> {sum}
+        </p>
         {!isEnabled && <p> The expense report limit has been exceeded</p>}
-        <button disabled={!isEnabled} onClick={this.onSubmit}>
-          Submit
-        </button>
+
+        <Button
+          id="submit"
+          className="justify-content-md-center"
+          disabled={!isEnabled}
+          onClick={this.onSubmit}
+          variant="outline-secondary"
+        >
+          Submit Report
+        </Button>
       </div>
     );
   }
 
   onSubmit = () => {
-    console.log(this.props.receipts);
+    console.log(this.props.receipts.slice(0, 5));
   };
 }
 
-export default Table;
+export default ExpenseTable;

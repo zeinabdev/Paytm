@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import Form from "./Form";
-import Table from "./Table";
+import ExpenseForm from "./Form";
+import ExpenseTable from "./Table";
 import "./App.css";
+import Container from "react-bootstrap/Container";
 
 class App extends Component {
   state = {
@@ -18,13 +19,14 @@ class App extends Component {
       .then(data => {
         this.setState({ currencies: data.rates });
       })
-      .catch(console.log("error"));
+      .catch(error => console.log(error));
   }
 
   render() {
     return (
-      <div className="App">
-        <Form
+      <Container>
+        <h2 align="center"> Paytm Expense Report </h2>
+        <ExpenseForm
           handleFormSubmit={this.handleFormSubmit}
           handleInputChange={this.handleInputChange}
           description={this.state.description}
@@ -32,8 +34,8 @@ class App extends Component {
           currency={this.state.currency}
           currencies={Object.keys(this.state.currencies)}
         />
-        <Table receipts={this.state.receipts} />
-      </div>
+        <ExpenseTable receipts={this.state.receipts} />
+      </Container>
     );
   }
 
