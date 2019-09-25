@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Paytm/precache-manifest.60779246aa89f5128f4cb03911ceb668.js"
+  "/Paytm/precache-manifest.f27ee8d8ab79642d22a7b96d07fa84dc.js"
 );
 
 self.addEventListener('message', (event) => {

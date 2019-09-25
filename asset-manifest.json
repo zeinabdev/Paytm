@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Paytm/static/css/main.520166f5.chunk.css",
-    "main.js": "/Paytm/static/js/main.572808be.chunk.js",
-    "main.js.map": "/Paytm/static/js/main.572808be.chunk.js.map",
+    "main.css": "/Paytm/static/css/main.2b0fa028.chunk.css",
+    "main.js": "/Paytm/static/js/main.d40debb8.chunk.js",
+    "main.js.map": "/Paytm/static/js/main.d40debb8.chunk.js.map",
     "runtime~main.js": "/Paytm/static/js/runtime~main.a9e4e5cb.js",
     "runtime~main.js.map": "/Paytm/static/js/runtime~main.a9e4e5cb.js.map",
-    "static/js/2.de7d8770.chunk.js": "/Paytm/static/js/2.de7d8770.chunk.js",
-    "static/js/2.de7d8770.chunk.js.map": "/Paytm/static/js/2.de7d8770.chunk.js.map",
+    "static/js/2.55a07d49.chunk.js": "/Paytm/static/js/2.55a07d49.chunk.js",
+    "static/js/2.55a07d49.chunk.js.map": "/Paytm/static/js/2.55a07d49.chunk.js.map",
     "index.html": "/Paytm/index.html",
-    "precache-manifest.60779246aa89f5128f4cb03911ceb668.js": "/Paytm/precache-manifest.60779246aa89f5128f4cb03911ceb668.js",
+    "precache-manifest.f27ee8d8ab79642d22a7b96d07fa84dc.js": "/Paytm/precache-manifest.f27ee8d8ab79642d22a7b96d07fa84dc.js",
     "service-worker.js": "/Paytm/service-worker.js",
-    "static/css/main.520166f5.chunk.css.map": "/Paytm/static/css/main.520166f5.chunk.css.map"
+    "static/css/main.2b0fa028.chunk.css.map": "/Paytm/static/css/main.2b0fa028.chunk.css.map"
   }
 }
