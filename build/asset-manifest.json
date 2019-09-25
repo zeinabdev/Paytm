@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Paytm/static/css/main.520166f5.chunk.css",
+    "main.js": "/Paytm/static/js/main.572808be.chunk.js",
+    "main.js.map": "/Paytm/static/js/main.572808be.chunk.js.map",
+    "runtime~main.js": "/Paytm/static/js/runtime~main.a9e4e5cb.js",
+    "runtime~main.js.map": "/Paytm/static/js/runtime~main.a9e4e5cb.js.map",
+    "static/js/2.de7d8770.chunk.js": "/Paytm/static/js/2.de7d8770.chunk.js",
+    "static/js/2.de7d8770.chunk.js.map": "/Paytm/static/js/2.de7d8770.chunk.js.map",
+    "index.html": "/Paytm/index.html",
+    "precache-manifest.60779246aa89f5128f4cb03911ceb668.js": "/Paytm/precache-manifest.60779246aa89f5128f4cb03911ceb668.js",
+    "service-worker.js": "/Paytm/service-worker.js",
+    "static/css/main.520166f5.chunk.css.map": "/Paytm/static/css/main.520166f5.chunk.css.map"
+  }
+}
